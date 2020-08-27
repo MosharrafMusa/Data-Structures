@@ -124,15 +124,12 @@ class DoublyLinkedList:
         if self.head is self.tail:
             self.head = None
             self.tail = None
-
         elif node is self.head:
             self.head = self.head.next
             node.remove()
-
         elif node is self.tail:
             self.tail = self.tail.prev
             node.remove()
-
         else:
             node.remove()
 
